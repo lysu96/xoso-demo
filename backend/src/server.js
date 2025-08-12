@@ -10,8 +10,8 @@ async function initializeDatabase() {
     const connection = await pool.getConnection();
     
     // Tạo database nếu chưa tồn tại
-    await connection.query("CREATE DATABASE IF NOT EXISTS xoso_db");
-    await connection.query("USE xoso_db");
+    // await connection.query("CREATE DATABASE IF NOT EXISTS xoso_db");
+    // await connection.query("USE xoso_db");
     
     // Tạo bảng
     await connection.query(`
